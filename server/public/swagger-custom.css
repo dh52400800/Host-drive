@@ -1,0 +1,214 @@
+/* Custom Swagger UI Styles */
+.swagger-ui {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.swagger-ui .topbar {
+  background-color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+}
+
+.swagger-ui .topbar .download-url-wrapper {
+  display: none;
+}
+
+.swagger-ui .info .title {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.swagger-ui .info .description {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.swagger-ui .scheme-container {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.swagger-ui .opblock {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.swagger-ui .opblock.opblock-post {
+  border-color: #49cc90;
+  background: rgba(73, 204, 144, 0.1);
+}
+
+.swagger-ui .opblock.opblock-get {
+  border-color: #61affe;
+  background: rgba(97, 175, 254, 0.1);
+}
+
+.swagger-ui .opblock.opblock-delete {
+  border-color: #f93e3e;
+  background: rgba(249, 62, 62, 0.1);
+}
+
+.swagger-ui .opblock.opblock-put {
+  border-color: #fca130;
+  background: rgba(252, 161, 48, 0.1);
+}
+
+.swagger-ui .opblock-summary {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.swagger-ui .opblock-description-wrapper p {
+  color: #666;
+  font-style: italic;
+}
+
+.swagger-ui .btn {
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.swagger-ui .btn.execute {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.swagger-ui .btn.execute:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+.swagger-ui .response-col_status {
+  font-weight: bold;
+}
+
+.swagger-ui .response.highlighted {
+  background: #f8f9fa;
+  border-left: 4px solid #28a745;
+}
+
+.swagger-ui .parameters-col_description p {
+  margin: 0;
+  color: #666;
+}
+
+.swagger-ui .parameter__name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.swagger-ui .parameter__type {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.swagger-ui .model-box {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+}
+
+.swagger-ui .model .property {
+  padding: 8px 12px;
+}
+
+.swagger-ui .prop-type {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.swagger-ui .prop-format {
+  color: #9b59b6;
+  font-style: italic;
+}
+
+/* Loading animation */
+.swagger-ui .loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.swagger-ui .loading-container .loading {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom tags styling */
+.swagger-ui .opblock-tag {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Authentication section highlight */
+.swagger-ui .opblock-tag[data-tag="Authentication"] {
+  color: #e74c3c;
+  border-bottom-color: #e74c3c;
+}
+
+.swagger-ui .opblock-tag[data-tag="Files"] {
+  color: #27ae60;
+  border-bottom-color: #27ae60;
+}
+
+/* Response examples */
+.swagger-ui .response-content-type {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.swagger-ui .highlight-code {
+  background: #2c3e50;
+  color: #ecf0f1;
+  border-radius: 6px;
+  padding: 15px;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+}
+
+/* Try it out section */
+.swagger-ui .try-out {
+  background: #e8f5e8;
+  border: 1px solid #27ae60;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.swagger-ui .try-out__btn {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: white;
+}
+
+/* Error responses */
+.swagger-ui .response.error {
+  background: #ffeaea;
+  border-left: 4px solid #e74c3c;
+}
+
+/* Success responses */
+.swagger-ui .response.success {
+  background: #eafaf1;
+  border-left: 4px solid #27ae60;
+}

@@ -1,0 +1,16 @@
+# Thư mục Service Accounts
+
+Thư mục này chứa các file JSON của Google Service Accounts được sử dụng cho việc upload và quản lý files trên Google Drive.
+
+## Cách thêm Service Account:
+
+1. Tạo Service Account trên Google Cloud Console
+2. Tải về file JSON credentials
+3. Đặt file JSON vào thư mục này
+4. Khởi động lại server để load Service Account mới
+
+## Lưu ý bảo mật:
+
+- Các file JSON chứa thông tin nhạy cảm, không được commit vào Git
+- Chỉ các admin có quyền truy cập thư mục này
+- Thường xuyên kiểm tra và rotate credentials
